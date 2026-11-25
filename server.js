@@ -6,6 +6,14 @@ const taskRoutes = require("./routes/tasks");
 const app = express();
 app.use(express.json());
 
+// API health-check / welcome endpoint
+app.get("/", (req, res) => {
+  res.send({
+    message: "Food delivery server is running HOT!",
+    author: "Eftajul Islam Shadi"
+  });
+});
+
 app.use("/api/tasks", taskRoutes);
 
 // Basic error handler

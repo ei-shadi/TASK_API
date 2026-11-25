@@ -1,5 +1,15 @@
 # Task API
 
+**Author:** Eftajul Islam Shadi
+
+## Server health check
+After starting the server, open `http://YOUR_VPS_IP:YOUR_PORT/` or send a `GET /` request. It returns:
+
+```text
+Food delivery server is running! Author: Eftajul Islam Shadi.
+```
+
+
 A simple Task API built with Node.js, Express, MongoDB and Mongoose.
 
 ## Setup
